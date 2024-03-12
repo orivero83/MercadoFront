@@ -3,7 +3,7 @@
 ///////////////////////         getMercadoPagoToken      //////////////////////////
 const getMercadoPagoToken = async () => {
     try {
-        const tokenResponse = await fetch('http://localhost:3000/token');
+        const tokenResponse = await fetch('https://mercadobacktest.onrender.com/token');
         if (!tokenResponse.ok) {
             throw new Error(`Error al obtener el token: ${tokenResponse.status} - ${tokenResponse.statusText}`);
         }
@@ -31,7 +31,7 @@ document.getElementById('checkout-btn').addEventListener('click', async () => {
         };
         console.log('Datos de la orden:', orderData);
 
-        const response = await fetch('http://localhost:3000/preference', {
+        const response = await fetch('https://mercadobacktest.onrender.com/preference', {
             method: 'POST',
             headers: {
                 "content-type": "application/json",
