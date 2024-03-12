@@ -1,0 +1,40 @@
+.card-product-container
+{
+    margin: 5vh auto;
+}
+
+.card-product
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 25px;
+    margin: 5vh auto;
+}
+
+.card img
+{
+    height: 200px;
+    width: 200px;
+}
+
+.card-product button
+{
+    border: none;
+    outline: 0;
+    padding: 10px;
+    color: white;
+    background-color: rgb(36, 164, 121);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 15px;
+    border-radius: 15px;
+}
+
+.card-product button:hover
+{
+    opacity: 0.7;
+}
